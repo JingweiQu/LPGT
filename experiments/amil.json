@@ -1,0 +1,21 @@
+{
+  "DATASET_NAME": "AMIL",
+  "model_dir": "results",
+  "save_checkpoint": true,
+  "RANDOM_SEED": 123,
+  "warmstart_path": null,
+  "TRAIN": {
+    "STATISTIC_STEP": 20,
+    "BATCH_SIZE": 4,
+    "EPOCH_ITERS": 160,
+    "LR": 0.0002,
+    "lr_schedule": "long_halving",
+    "SAMPLES": null
+  },
+  "EVAL": {
+    "BATCH_SIZE": 1,
+    "SAMPLES": null,
+    "STATISTIC_STEP": 20
+  },
+  "evaluate_only": false
+}
