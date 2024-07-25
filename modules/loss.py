@@ -13,9 +13,6 @@ EPS = 1e-8
 
 
 class LossFunc(nn.Module):
-    """
-    MSE Loss，要求网络最后的输出接ReLU
-    """
     def __init__(self, alpha, beta, gamma):
         super().__init__()
         self.alpha = alpha

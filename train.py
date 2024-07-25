@@ -31,12 +31,12 @@ def train_eval_model(stage_id, model, criterion, optimizer, dataloader, num_epoc
     device = next(model.parameters()).device
     print("model on device: {}".format(device))
 
-    checkpoint_path = Path(cfg.model_dir) / str(stage_id + 1) / "params"
+    checkpoint_path = Path(cfg.model_dir) / str(stage_id + 1) / "trained_models"
     if not checkpoint_path.exists():
         checkpoint_path.mkdir(parents=True)
 
     if stage_id > 0:
-        model_path = Path(cfg.model_dir) / str(stage_id) / "params" / "{:04}".format(last_best_epoch) / 'params.pt'
+        model_path = Path(cfg.model_dir) / str(stage_id) / "trained_models" / "{:04}".format(last_best_epoch) / 'trained_models.pt'
         print("Loading model parameters from {}".format(model_path))
         model.load_state_dict(torch.load(model_path))
 
@@ -100,7 +100,7 @@ def train_eval_model(stage_id, model, criterion, optimizer, dataloader, num_epoc
         if cfg.save_checkpoint:
             base_path = Path(checkpoint_path / "{:04}".format(epoch + 1))
             Path(base_path).mkdir(parents=True, exist_ok=True)
-            torch.save(model.state_dict(), str(base_path / "params.pt"))
+            torch.save(model.state_dict(), str(base_path / "trained_models.pt"))
 
         print("Over whole epoch {:<4} -------- Loss: {:.4f}".format(epoch + 1, epoch_loss))
         print()

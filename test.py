@@ -25,7 +25,8 @@ if __name__ == "__main__":
     import json
     import os
 
-    model_dir = 'results/4/params/80/params.pt'
+    model_dir = 'trained_models'
+    model_name = 'params.pt'
 
     with open(os.path.join(model_dir, "test_settings.json"), "w") as f:
         json.dump(cfg, f)
@@ -52,4 +53,4 @@ if __name__ == "__main__":
                         normalization=True)
         model = model.cuda()
 
-        eval_model(model, dataloader, model_path=model_dir)
+        eval_model(model, dataloader, model_path=model_dir + '/' + model_name)

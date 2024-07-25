@@ -99,9 +99,9 @@ class AMIL:
                     label_center = gt_label_pos[group_id - 1]
                     nearest_anchor = self.find_nearest_anchor(label_center, multi_anchors)
                     anchors.append(nearest_anchor)
-            anchors = np.array(anchors)
+            anchors = np.array(anchors).astype(float)
         else:
-            anchors = np.array(list(map(itemgetter('points'), sorted_anchor)))[:, 0, :]
+            anchors = np.array(list(map(itemgetter('points'), sorted_anchor))).astype(float)[:, 0, :]
 
         img, im_size = self.get_image(os.path.join(self.image_path, category, file_name + '-P.png'))
 

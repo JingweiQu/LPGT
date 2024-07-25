@@ -138,8 +138,8 @@ def update_params_from_cmdline(cmd_line=None, default_params=None, custom_parser
     """ Updates default settings based on command line input.
 
     :param cmd_line: Expecting (same format as) sys.argv
-    :param default_params: Dictionary of default params
-    :param custom_parser: callable that returns a dict of params on success
+    :param default_params: Dictionary of default trained_models
+    :param custom_parser: callable that returns a dict of trained_models on success
     and None on failure (suppress exceptions!)
     :param verbose: Boolean to determine if final settings are pretty printed
     :return: Immutable nested dict with (deep) dot access. Priority: default_params < default_json < cmd_line

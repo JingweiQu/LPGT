@@ -3,8 +3,6 @@
 # ========================================================================================
 
 
-import math
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -13,6 +11,7 @@ from torch.nn import ModuleList, Linear, LayerNorm
 from torch_geometric.utils import softmax
 from torch_scatter import scatter
 from torchvision.ops import roi_align
+import math
 
 
 class LPModel(nn.Module):

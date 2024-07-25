@@ -86,9 +86,9 @@ class GMDataset(Dataset):
         )
 
         ret_dict = {
-            'n_nodes': torch.tensor(n_label, dtype=torch.long),  # label数量
-            'im_sizes': torch.tensor(anno_dict['im_size'], dtype=torch.long),  # 图像大小
-            'L_pcks': torch.tensor(anno_dict['L_pck'], dtype=torch.float32),  # pck阈值
+            'n_nodes': torch.tensor(n_label, dtype=torch.long),  # label quantity
+            'im_sizes': torch.tensor(anno_dict['im_size'], dtype=torch.long),  # image size
+            'L_pcks': torch.tensor(anno_dict['L_pck'], dtype=torch.float32),  # pck threshold
             'graphs': graph,
             'images': self.trans(anno_dict['image'])
         }

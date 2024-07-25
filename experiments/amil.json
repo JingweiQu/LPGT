@@ -1,6 +1,6 @@
 {
   "DATASET_NAME": "AMIL",
-  "model_dir": "results",
+  "model_dir": "trained_models",
   "save_checkpoint": true,
   "RANDOM_SEED": 123,
   "warmstart_path": null,
