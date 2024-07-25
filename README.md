@@ -16,10 +16,10 @@ It contains the training and evaluation procedures in the paper.
 * **[PyG](https://www.pyg.org/)** (>= 2.3.1)
 
 ## Dataset
-Download the [SWU-AMIL](https://higa.teracloud.jp/share/11e10e2e41362303) dataset and extract it to the folder `data`.
+Download the [SWU-AMIL](https://higa.teracloud.jp/share/11e16e39781d2703) dataset and extract it to the folder `data`.
 
 ## Evaluation
-Run evaluation using the trained models provided in the folder `params`:
+Download the [trained model](https://higa.teracloud.jp/share/11e103bcb9e85fe7) into the folder `trained_models`. Then run evaluation:
 ```bash
 python test.py experiments/amil.json
 ```
