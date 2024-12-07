@@ -36,7 +36,10 @@ python train.py experiments/amil.json
  title={Graph Transformer for Label Placement},
  author={Qu, Jingwei and Zhang, Pingshun and Che, Enyu and Chen, Yinan and Ling, Haibin},
  journal={IEEE Transactions on Visualization and Computer Graphics},
- year={2024},
+ volume={31},
+ number={1},
+ pages={1257-1267},
+ year={2025},
  doi={10.1109/TVCG.2024.3456141}
 }
 ```
