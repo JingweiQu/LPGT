@@ -32,7 +32,7 @@ python train.py experiments/amil.json
 
 ## Citation
 ```text
-@article{qu2024graph,
+@article{qu2025graph,
  title={Graph Transformer for Label Placement},
  author={Qu, Jingwei and Zhang, Pingshun and Che, Enyu and Chen, Yinan and Ling, Haibin},
  journal={IEEE Transactions on Visualization and Computer Graphics},
