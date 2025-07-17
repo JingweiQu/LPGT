@@ -6,7 +6,7 @@ Air Conditioner | Dishwasher | Remote
 
 This repository is the implementation of the paper: 
 
-Jingwei Qu, Pingshun Zhang, Enyu Che, Yinan Chen, and Haibin Ling. [Graph Transformer for Label Placement](https://jingweiqu.github.io/project/LPGT/index.html). *TVCG*, 2024.
+Jingwei Qu, Pingshun Zhang, Enyu Che, Yinan Chen, and Haibin Ling. [Graph Transformer for Label Placement](https://jingweiqu.github.io/project/LPGT/index.html). *TVCG*, 2025.
 
 It contains the training and evaluation procedures in the paper.
 
